@@ -19,7 +19,7 @@ COPY README.md /app/
 RUN pip install --no-cache-dir -e .
 
 # Environment variables for Neo4j connection
-ENV NEO4J_URL="bolt://host.docker.internal:7687"
+ENV NEO4J_URL="bolt://neo4j:7687"
 ENV NEO4J_USERNAME="neo4j"
 ENV NEO4J_PASSWORD="password"
 
